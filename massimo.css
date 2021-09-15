@@ -229,7 +229,7 @@ h3 {
 
 .livello {
   width: 40%;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 /* sezione la mia storia */
@@ -399,5 +399,9 @@ h3 {
   .accordion-generale {
     width: 80%;
   }
+  .livello {
+  font-size: 18px;
+}
+
   
 }
