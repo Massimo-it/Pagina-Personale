@@ -175,7 +175,7 @@ h3 {
 
 .accordion-generale {
   padding: 0 15px;
-  width: 80%;
+  width: 95%;
   margin: auto;
 }
 
@@ -229,6 +229,7 @@ h3 {
 
 .livello {
   width: 40%;
+  font-size: 15px;
 }
 
 /* sezione la mia storia */
@@ -394,6 +395,9 @@ h3 {
   .testo-sezione-storia {
     width: 70%;
     padding-top: 10px;
+  }
+  .accordion-generale {
+    width: 80%;
   }
   
 }
