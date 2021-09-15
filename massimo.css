@@ -1,0 +1,399 @@
+/* CSS style per il sito personale di Massimo Dattero */
+
+/* impostazioni generali */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kufam', cursive;
+  color: #00004d;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+span {
+  font-weight: bold;
+}
+
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+hr {
+  width: 50%;
+  margin: 40px auto;
+}
+
+.torna-su {
+  text-align: center;
+}
+
+h3 {
+  padding: 10px;
+}
+
+/* barra di navigazione */
+
+.contenitore-mobile {
+  /*max-width: 480px;*/
+  width: 100%;
+  margin: auto;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  z-index: 2;
+}
+
+
+#barra-navigazione {
+  background-color: #00004d;
+  padding: 14px 0;
+}
+
+#logo {
+  display: inline;
+  padding-left: 10px;
+  color: white;
+}
+
+#logo a {
+  color: white;
+}
+#logo a:hover {
+  color: #8080ff;
+}
+
+#menu a {
+  color: rgb(230, 255, 255);
+  background-color: #00004d;
+  display: block;
+  padding: 10px 16px;
+}
+
+#menu {
+  display: none;
+  margin-top: 10px;
+}
+
+.tre-righe {
+  background: rgb(0, 230, 230);
+  position: absolute;
+  padding: 5px 16px;
+  font-size: 30px;
+  right: 0;
+  top: 0;
+}
+
+.tre-righe:hover {
+  background-color: #00004d;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+#menu a:hover {
+  background-color: rgb(0, 230, 230);
+  color: #00004d;
+}
+
+/* pagina home */
+
+main {
+  background-image: url("immagini/stairway.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.fotoMassimo {
+  width: 20%;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  right: 50px;
+}
+
+@keyframes nome-animazione {
+	0% {top: 0px; opacity: 0%}
+	100% {top: 60%; opacity: 100%}
+}
+
+.aforismi {
+  position: absolute;
+  width: 60%;
+  padding-top: 20px;
+  animation: nome-animazione 2s forwards;
+  left: 10%;
+  z-index: 1
+}
+
+
+
+.aforismi p {
+  color: white;
+  padding: 5px;
+}
+
+cite {
+  color: white;
+}
+
+/* sezione soft skills e hard skills */
+
+#hard-skills {
+  margin-bottom: 100px;
+}
+
+.accordion-hard {
+  padding-bottom: 80px;
+}
+
+.simbolo {
+  padding-right: 5px;
+}
+
+h3 {
+  margin-top: 60px;
+}
+
+.hard {
+  position: relative;
+  top: -50px;
+  left: 60%;
+}
+
+.accordion-generale {
+  padding: 0 15px;
+  width: 80%;
+  margin: auto;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.accordion:hover {
+  background-color: #ccc; 
+}
+
+.pannello {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.testo-pannello {
+  padding: 10px 0;
+}
+
+.titolo-livello {
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+
+.titolo-livello-info {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-decoration: underline;
+}
+
+.blocco-materia {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.materia {
+  width: 60%;
+}
+
+.livello {
+  width: 40%;
+}
+
+/* sezione la mia storia */
+
+.storia {
+  padding: 0 18px;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+}
+
+.contenitore-sezione-storia {
+  margin-top: 10px;
+}
+
+.titolo-sezione {
+  padding-top: 20px;
+}
+
+.testo-sezione {
+  padding: 10px 3px;
+}
+
+
+
+/* contatti */
+
+#contatti {
+  width: 100%;
+  margin: auto;
+  background-color: #00004d;
+  color: #ffffff;
+}
+
+.titolo-contatti {
+  color: #ffffff;
+}
+
+.testo-contatti {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(230, 255, 255);
+}
+
+.bottone {
+  border-radius: 2px;
+  padding: 10px;
+  background-color: #00004d;
+  border: 1px solid #00004d;
+}
+
+.bottone a {
+  color: white;
+}
+
+.bottone:hover {
+  background-color: #000080;
+}
+
+.footer-blocco1 {
+  padding: 20px 0 20px 0;
+}
+
+.centra {
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-blocco2 img{
+  margin: 10px;
+  border-radius: 50%;
+  border: 2px solid #00004d;
+}
+
+.footer-blocco2 img:hover{
+  border: 2px solid white;
+}
+
+.social img{
+  width: 5%;
+  transition: transform .2s;
+}
+
+.footer-blocco3 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.social img:hover {
+  transform: scale(1.2);
+}
+
+/* media query per schermi maggiori di 900px  */
+
+@media screen and (min-width: 900px) {
+  .contenitore-mobile {
+    max-width: 100%;
+  }
+  
+  .tre-righe {
+    display: none;
+  }
+  
+  #menu {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+  }
+  
+  #menu a {
+    padding-bottom: 4px;
+  }
+  
+  #barra-navigazione {
+    padding-bottom: 0;
+    display: flex;
+  }
+  
+  .main-sopra {
+    height: 500px;
+  }
+  
+  .fotoMassimo {
+    width: 20%;
+  }
+  
+  .main-sopra {
+    width:45%;
+  }
+  
+  .aforismi {
+    width: 45%;
+    margin-top: 5px;
+  }
+  
+  main {
+    display: flex;
+  }
+  
+  .immagini-storia {
+  width: 30%;
+  }
+  
+  .materia {
+  width: 30%;
+  }
+
+  .livello {
+  width: 20%;
+  }
+  
+  .contenitore-sezione-storia {
+    display: flex;
+  }
+  
+  .blocco-titolo-data {
+    width: 30%;
+  }
+  
+  .testo-sezione-storia {
+    width: 70%;
+    padding-top: 10px;
+  }
+  
+}

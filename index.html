@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+	<meta name="keywords" content="Massimo Dattero pagina personale">
+	<meta name="description" content="Pagina Personale di Massimo Dattero">
+  
+  <!-- link ai fogli di stile -->
+  <link rel="stylesheet" type="text/css" href="massimo.css">
+  
+  <!-- FAVICON  -->
+	<link rel="shortcut icon" href="immagini/faviconM.ico" type="image/x-icon">
+  
+  <!-- Google Font Kufam -->  
+  <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
+  
+	<title>Massimo Dattero</title>
+
+</head>
+
+<body>
+
+  <div class="contenitore-mobile">
+
+    <nav id="barra-navigazione">
+      <h4 id="logo"><a href="index.html">Massimo Dattero</a></h4>
+      <div id="menu">
+        <a href="#soft-skills" onclick="chiudiMenu()">Soft Skills</a>
+        <a href="#hard-skills" onclick="chiudiMenu()">Hard-Skills</a>
+        <a href="#storia" onclick="chiudiMenu()">La mia Storia</a>
+        <a href="#contatti" onclick="chiudiMenu()">Contatti</a>
+      </div>
+      <span class="tre-righe" onclick="apriMenu()"> &#8801 </span>
+    </nav>
+    
+    <main>
+    
+      <div class="main-sopra">
+        <img src="immagini/fotoMassimo.jpg" title="Foto di Massimo" alt="Foto di Massimo in primo piano" class="fotoMassimo">
+      </div>
+      
+      <div class="aforismi">
+      
+        <p><cite>"Dobbiamo avere il coraggio di seguire il nostro cuore e la nostra intuizione. In qualche modo, essi sanno
+        che cosa vogliamo realmente diventare. Tutto il resto è secondario."</cite><br>(Steve Jobs)</p>
+    
+      </div> 
+      
+    </main>
+    
+    <section id="soft-skills">
+    <hr>
+      
+    
+      <h3>Soft-Skills</h3>
+      
+      <!-- accordion - collaps - descrizione soft-skills-->
+    
+      <div class="accordion-generale">
+      
+        <button class="accordion" onclick="attivaBlocco(0)"><span class="simbolo"> &#9947 </span> Organizzazione e Planning</button>
+        <div class="pannello">
+          <p class="testo-pannello">
+            Il tempo è probabilmente la risorsa più diffusa al mondo perché è a disposizione di tutti, ma è anche quella che ci manca
+            sempre per fare tutto ciò che vogliamo fare nell’arco della nostra giornata o magari anche nell’arco della nostra vita. 
+            Fare piani concreti ed essere organizzati in modo tale da rispettarli per raggiungere gli obiettivi che ci si è posti, 
+            credo che sia una delle mie soft skills più utili.<br><br>
+            <span>Grazie alla mia buona organizzazione e visione chiara degli obiettivi
+            da raggiungere, difficilmente non li raggiungo.</span>
+          </p>
+        </div>
+        
+        <button class="accordion" onclick="attivaBlocco(1)"><span class="simbolo"> &#9947 </span>Precisione e Puntualità</button>
+        <div class="pannello">
+          <p class="testo-pannello">
+             Il rispetto delle persone si ottiene mantenendo la parola data. Giungere in un luogo al momento stabilito è una forma
+             di rispetto verso il prossimo, ma significa anche mantenere la parola data. Anche l’essere preciso nel fare quello che
+             si deve al momento giusto è una forma di puntualità. <br><br>
+             <span>Mi impegno sempre per completare i lavori che mi vengono affidati
+             con la puntualità e la precisione richiesti.</span>
+          </p>
+        </div>
+ 
+        <button class="accordion" onclick="attivaBlocco(2)"><span class="simbolo"> &#9947 </span>Problem Solving</button> 
+        <div class="pannello">
+          <p class="testo-pannello">
+              Nell’attività lavorativa si incontrano innumerevoli problemi. Alcuni sono facili da risolvere, alcuni addirittura
+              si risolvono da soli, ma se si incontra un problema serio, esso va risolto. Se non ci si riesce da soli ci si rivolge
+              ai colleghi. Se il problema non si risolve con l’aiuto dei colleghi, esso va scalato e presentato
+              ai livelli superiori della gerarchia, se si lavora un’organizzazione gerarchica. Se il problema non si riesce a risolvere
+              con le risorse interne, si cerca all’esterno. Comunque il problema serio va risolto.<br><br>
+              <span>Credo di avere un buon livello di problem solving.</span>
+          </p>
+        </div>
+
+        <button class="accordion" onclick="attivaBlocco(3)"><span class="simbolo"> &#9947 </span>Creatività</button>
+        <div class="pannello">
+          <p class="testo-pannello">
+              La creatività è una soft skill legata al Problem Solving da un rapporto di parentela stretta. Senza la creatività è
+              quasi impossibile risolvere i problemi. Ma la creatività può aiutare molto anche a migliorare i processi rendendoli 
+              più snelli e smart. <br><br>
+              <span>Mi piace aggiungere un tocco di creatività in ciò che faccio.</span>
+          </p>
+        </div>
+        
+        <button class="accordion" onclick="attivaBlocco(4)"><span class="simbolo"> &#9947 </span>Flessibilità al cambiamento</button>
+        <div class="pannello">
+          <p class="testo-pannello">
+              Mi piacciono i cambiamenti. Sia nella vita lavorativa che nella vita privata. Ogni cambiamento è sempre ben accetto. 
+              Ho la capacità di abituarmi e adattarmi velocemente ai nuovi ambienti e alle nuove situazioni. <br><br>
+              <span>Ritengo che i cambiamenti mantengano la mente viva, pronta e allenata agli imprevisti.</span>
+          </p>
+        </div>
+
+        <button class="accordion" onclick="attivaBlocco(5)"><span class="simbolo"> &#9947 </span>Team Work</button>
+        <div class="pannello">
+          <p class="testo-pannello">
+              Due persone sono più forti di una. Dieci persone sono più forti di due. I team ben oliati, organizzati e collaborativi
+              sono una garanzia di successo per le organizzazioni. <br><br>
+              <span>Il mio carattere pacifico, conciliante e amichevole mi consente d'inserirmi e lavorare nei Team con facilità.</span>
+          </p>
+        </div>
+
+      </div>
+    
+    </section>
+    
+    <section id="hard-skills">
+      <hr>
+      
+      <h3 class="accordion-hard">Hard-Skills</h3>
+      
+      <!-- accordion  -->
+    
+      <div class="accordion-generale">
+      
+        <button class="accordion" onclick="attivaBlocco(6)"><span class="simbolo"> &#9947 </span>Titoli di studio scolastici</button>
+        <div class="pannello">
+          <p class="testo-pannello">
+            Diploma di ragioneria. <br><br>
+            Laurea di primo livello in ECONOMIA AZIENDALE conseguita tramite l'univesità a distanza UNINETTUNO con voto 98/110.
+          </p>
+        </div>
+        
+        <button class="accordion" onclick="attivaBlocco(7)"><span class="simbolo"> &#9947 </span>Contabilità, Finanza e Controlling</button>
+        <div class="pannello">
+          <p class="testo-pannello">
+             Essendo stato responsabile amministrativo per dieci anni e avendo lavorato per oltre vent'anni in ambito amministrativo,
+             ho avuto modo di mettere in pratica quanto studiato a scuola. Conosco abbastanza bene la contabilità, la finanza
+             e il controlling.
+          </p>
+        </div>
+ 
+        <button class="accordion" onclick="attivaBlocco(8)"><span class="simbolo"> &#9947 </span>Lingue</button> 
+        <div class="pannello">
+          <p class="testo-pannello">
+              <b>Inglese:</b> è da una vita che studio l'inglese. Oltre a quanto studiato a scuola, ho preso innumerevoli lezioni private,
+              ho frequentato innumerevoli corsi di gruppo, ma non ho mai fatto esami ufficiali per prendere dei certificati. Ritengo
+              che il mio livello di inglese sia BUONO.
+              <br>
+              <b>Francese:</b> studiato a scuola e all'università, sono arrivato a un buon livello di conoscenza, ma non avendolo usato
+              lo sto perdendo.
+              <br>
+              <b>Polacco:</b> vivo in Polonia da più di vent'anni. Riesco a gestire conversazioni fluenti in polacco senza problemi.
+              <br><br>
+              <h4 class="titolo-livello">Livello lingue</h4>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>ITALIANO: madre lingua</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127773 &#127773 &#127773 &#127773 &#127773 </p>
+                </div>
+              </div>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>INGLESE: buono</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127773 &#127773 &#127773 &#127773 &#127770 </p>
+                </div>
+              </div>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>POLACCO: buono</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127773 &#127773 &#127773 &#127773 &#127770 </p>
+                </div>
+              </div>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>FRANCESE: migliorabile</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127773 &#127773 &#127770 &#127770 &#127770 </p>
+                </div>
+              </div>
+              <br><br>
+          </p>
+        </div>
+        
+        <button class="accordion" onclick="attivaBlocco(9)"><span class="simbolo"> &#9947 </span>Conoscenze Informatiche</button> 
+        <div class="pannello">
+          <h4 class="titolo-livello-info">Livello conoscenze informatiche</h4>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>HTML(5)</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127773 &#127773 &#127773 &#127773 &#127770 </p>
+                </div>
+              </div>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>CSS(3)</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127773 &#127773 &#127773 &#127773 &#127770 </p>
+                </div>
+              </div>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>JavaScript</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127773 &#127773 &#127773 &#127770 &#127770 </p>
+                </div>
+              </div>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>Jquery</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127773 &#127773 &#127770 &#127770 &#127770 </p>
+                </div>
+              </div>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>React</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127770 &#127770 &#127770 &#127770 &#127770 </p>
+                </div>
+              </div>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>GIT</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127773 &#127770 &#127770 &#127770 &#127770 </p>
+                </div>
+              </div>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>Github</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127773 &#127773 &#127770 &#127770 &#127770 </p>
+                </div>
+              </div>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>Bootstrap</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127773 &#127773 &#127770 &#127770 &#127770 </p>
+                </div>
+              </div>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>Sass</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127773 &#127770 &#127770 &#127770 &#127770 </p>
+                </div>
+              </div>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>WorldPress</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127773 &#127773 &#127770 &#127770 &#127770 </p>
+                </div>
+              </div>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>PHP</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127773 &#127773 &#127770 &#127770 &#127770 </p>
+                </div>
+              </div>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>MySQL</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127770 &#127770 &#127770 &#127770 &#127770 </p>
+                </div>
+              </div>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>Docker</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127773 &#127770 &#127770 &#127770 &#127770 </p>
+                </div>
+              </div>
+              <div class="blocco-materia">
+                <div class="materia">
+                  <h5>Ruby on Rails</h5>
+                </div>
+                <div class="livello">
+                  <p class="simbolo"> &#127773 &#127770 &#127770 &#127770 &#127770 </p>
+                </div>
+              </div>
+              <br><br>
+        </div>
+
+      </div>
+    
+    </section>
+    
+    <section id="storia">
+      <hr>
+      
+      <h3>La mia storia</h3>
+      
+      <div class="storia">
+      
+        <div class="contenitore-sezione-storia">
+          <div class="blocco-titolo-data">
+            <h4 class="titolo-sezione">Full Stack Development Student</h4>
+            <p>dal 14/09/2020 a oggi</p>
+          </div>
+          <div class="testo-sezione-storia">
+            <p class="testo-sezione">Iscritto alla start2impact.it al corso Sviluppo WEB per diventare Full Stack Developement.</p>
+          </div>
+        </div>
+        
+        <div class="contenitore-sezione-storia">
+          <div class="blocco-titolo-data">
+            <h4 class="titolo-sezione">MDL Trade Sp. z o.o.</h4>
+            <p>dal 24/09/2012 a oggi</p>
+          </div>
+          <div class="testo-sezione-storia">
+            <p class="testo-sezione">Amministratore delegato, responsabile amministrativo e business development della società
+            a responsabilità limitata MDL Trade.</p>
+          </div>
+        </div>
+          
+        <div class="contenitore-sezione-storia">
+          <div class="blocco-titolo-data">
+            <h4 class="titolo-sezione">Site Security Leader</h4>
+            <p>dal 01/02/2019 a oggi</p>
+          </div>
+          <div class="testo-sezione-storia">
+            <p class="testo-sezione">Responsabile della security per la Avio Polska Sp. z o.o., assunto come dipendente a tempo
+            indeterminato con contratto a part time.</p>
+          </div>
+        </div>
+        
+        <div class="contenitore-sezione-storia">
+          <div class="blocco-titolo-data">
+            <h4 class="titolo-sezione">Membro CdA</h4>
+            <p>dal 01/07/2014 al 31/01/2019</p>
+          </div>
+          <div class="testo-sezione-storia">
+            <p class="testo-sezione">Membro del Consiglio di Amministrazione della Avio Polska Sp. z o.o., responsabile dell'International
+            Trade Compliance, Site Security Leader, Progetti Finanziati con fondi pubblici, GDPR.</p>
+          </div>
+        </div>
+        
+        <div class="contenitore-sezione-storia">
+          <div class="blocco-titolo-data">
+            <h4 class="titolo-sezione">Responsabile amministrativo</h4>
+            <p>dal 01/07/2004 al 31/08/2014</p>
+          </div>
+          <div class="testo-sezione-storia">
+            <p class="testo-sezione">Responsabile di amministrazione, fianza e controllo della Avio Polska Sp. z o.o.</p>
+          </div>
+        </div>
+          
+        <div class="contenitore-sezione-storia">
+          <div class="blocco-titolo-data">
+            <h4 class="titolo-sezione">Key Account CNH</h4>
+            <p>dal 01/08/2003 al 30/06/2004</p>
+          </div>
+          <div class="testo-sezione-storia">
+            <p class="testo-sezione">Nell'ambito del gruppo FIAT e in campo amministrativo ho ricoperto il ruolo di Key Account
+            Manager occupandomi della società del gruppo CNH.</p>
+          </div>
+        </div>
+        
+        <div class="contenitore-sezione-storia">
+          <div class="blocco-titolo-data">
+            <h4 class="titolo-sezione">Responsabile Polo Europa</h4>
+            <p>dal 01/06/1999 al 31/07/2003</p>
+          </div>
+          <div class="testo-sezione-storia">
+            <p class="testo-sezione">Responsabile del Shared Services dell'amministrazione del ciclo passivo di tutto il gruppo
+            FIAT a livello europeo situato in Polonia a Bielsko-Biala.</p>
+          </div>
+        </div>
+        
+        <div class="contenitore-sezione-storia">
+          <div class="blocco-titolo-data">
+            <h4 class="titolo-sezione">Responsabile progetto Germania</h4>
+            <p>dal 01/10/1998 al 31/05/1999</p>
+          </div>
+          <div class="testo-sezione-storia">
+            <p class="testo-sezione">Responsabile del progetto "Standardizzazione Ciclo Passivo del gruppo FIAT" presso la IVECO
+            Magirus in Germania, nella città di Ulm.</p>
+          </div>
+        </div>
+        
+        <div class="contenitore-sezione-storia">
+          <div class="blocco-titolo-data">
+            <h4 class="titolo-sezione">Progetto Polonia</h4>
+            <p>dal 01/12/1995 al 30/09/1998</p>
+          </div>
+          <div class="testo-sezione-storia">
+            <p class="testo-sezione">Realizzazione del progetto "Standardizzazione dei sistemi contabili del gruppo FIAT" presso la 
+            Fiat Auto Poland, stabilimenti di Bielsko-Biale e di Tychy. Addestramento e supporto metodologico agli utenti di contabilità</p>
+          </div>
+        </div>
+        
+        <div class="contenitore-sezione-storia">
+          <div class="blocco-titolo-data">
+            <h4 class="titolo-sezione">Progetto standardizzazione</h4>
+            <p>dal 1989 al 1995</p>
+          </div>
+          <div class="testo-sezione-storia">
+            <p class="testo-sezione">Partecipazione al progetto di standardizzazione dei processi informatici contabili di Fiat. 
+            Successivamente responsabile di un gruppo di verificatori di fatture del Ciclo Passivo.</p>
+          </div>
+        </div>
+        
+        <div class="contenitore-sezione-storia">
+          <div class="blocco-titolo-data">
+            <h4 class="titolo-sezione">Esperienze precedenti</h4>
+            <p>dal 1986 al 1989</p>
+          </div>
+          <div class="testo-sezione-storia">
+            <p class="testo-sezione">Nel 1988 sono assunto alla Alfa Lancia di Chivasso come operatore del Ciclo Passivo. Nel 1987
+            lavoro per alcuni mesi nel CED (Centro Elaborazione Dati) del comune di Settimo Torinese in sostituzione di una maternità.
+            Tra il 1986 e il 1987 faccio il rappresentante commerciale di prodotti antinfortunistici e poi il venditore di immobili per
+            la Tecnocasa.</p>
+          </div>
+        </div>
+        
+      </div>
+   
+    </section>
+    
+    <section id="contatti">
+      <hr>
+      
+      <h3 class="titolo-contatti">contatti</h3>
+      
+      <div class="testo-contatti">
+        <p>Chiunque volesse contattarmi può farlo via email cliccando:</p>
+          <br>
+          <button class="bottone"><a href="mailto:massimo.developer@protonmail.com">per inviarmi una email clicca qui</a></button>
+        </p>
+        <br>
+        <p>oppure tramite i social sotto riportati.</p>
+      </div>
+    
+    
+    
+      
+      <div class="footer-blocco1">
+        <p class="centra">email di contatto:</p>
+        <p class="centra">massimo.developer@protonmail.com</p>
+      </div>
+        
+        
+      
+      
+      <div class="footer-blocco3">
+        <a href="https://www.linkedin.com/in/massimo-dattero-27a70321/" target="_blank" class="social"><img src="immagini/Social-Linkedin.png" alt="logo di Linkedin"></a>
+        <a href="https://twitter.com/Massimo32462929" target="_blank" class="social"><img src="immagini/Social-Twitter.png" alt="logo di Twitter"></a>
+        <a href="https://www.facebook.com/massimo.dattero.73" target="_blank" class="social"><img src="immagini/Social-Facebook.png" alt="logo di Facebook"></a>
+        <a href="https://www.instagram.com/massimo.eu/" target="_blank" class="social"><img src="immagini/Social-Instagram.png" alt="logo di Instagram"></a>
+      </div>
+      
+    </section>
+  
+  </div>
+
+
+<script src="massimo.js"></script>
+
+
+</body>
+</html>
