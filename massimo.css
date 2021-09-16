@@ -107,9 +107,10 @@ nav {
 /* pagina home */
 
 main {
-  background-image: url("immagini/stairway.jpg");
+  background-image: url("immagini/background-image.jpg");
   background-repeat: no-repeat;
   background-size:cover;
+  background-position: center;
   width: 100%;
   height: 600px;
   overflow: hidden;
@@ -118,7 +119,7 @@ main {
 
 .fotoMassimo {
   width: 20%;
-  border-radius: 50%;
+  border-radius: 10%;
   position: absolute;
   top: 100px;
   right: 50px;
@@ -126,13 +127,12 @@ main {
 
 @keyframes nome-animazione {
 	0% {top: 0px; opacity: 0%}
-	100% {top: 60%; opacity: 100%}
+	100% {top: 50%; opacity: 100%}
 }
 
 .aforismi {
   position: absolute;
   width: 60%;
-  padding-top: 20px;
   animation: nome-animazione 2s forwards;
   left: 10%;
   z-index: 1
@@ -142,6 +142,7 @@ main {
 
 .aforismi p {
   color: white;
+  background-color: #000066;
   padding: 5px;
 }
 
