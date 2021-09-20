@@ -7,10 +7,12 @@ function apriMenu() {
   let y = document.getElementById("barra-navigazione"); //aggiusta il padding della barra di navigazione - mia modifica
   if (x.style.display === "block") {
     x.style.display = "none";
-	y.style.paddingBottom = "14px";  
+	y.style.paddingBottom = "14px";
+document.getElementById("ics").innerHTML = " &#8801 ";	
   } else {
     x.style.display = "block";
-	y.style.paddingBottom = "0";  
+	y.style.paddingBottom = "0";
+	document.getElementById("ics").innerHTML = "x";
   }
 }
 

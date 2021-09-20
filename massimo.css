@@ -85,7 +85,7 @@ nav {
 }
 
 .tre-righe {
-  background: rgb(0, 230, 230);
+  color: #ffffff;
   position: absolute;
   padding: 5px 16px;
   font-size: 30px;
@@ -94,9 +94,7 @@ nav {
 }
 
 .tre-righe:hover {
-  background-color: #00004d;
   cursor: pointer;
-  color: #ffffff;
 }
 
 #menu a:hover {
