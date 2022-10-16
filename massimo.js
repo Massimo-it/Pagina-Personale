@@ -1,43 +1,57 @@
-//Pagina personale Massimo Dattero
+//Personal page of Massimo Dattero
 
-// funzioni onlclick per la gestione del menu - tratto da w3schools con mie modifiche
+// open the menu
+
+const hamburger = document.getElementById("ics");
+
+hamburger.addEventListener("click", apriMenu);
 
 function apriMenu() {
   let x = document.getElementById("menu");
-  let y = document.getElementById("barra-navigazione"); //aggiusta il padding della barra di navigazione - mia modifica
   if (x.style.display === "block") {
     x.style.display = "none";
-	y.style.paddingBottom = "14px";
-document.getElementById("ics").innerHTML = " &#8801 ";	
+	document.getElementById("ics").innerHTML = " &#8801 ";	
   } else {
     x.style.display = "block";
-	y.style.paddingBottom = "0";
 	document.getElementById("ics").innerHTML = "x";
   }
 }
 
-function chiudiMenu() {
-	let w = window.innerWidth;
-	if (w < 900) {
+
+// close the menu
+
+let myWidth = window.innerWidth;
+if (myWidth <= 900) {
+
+	const closeMenu = document.getElementsByClassName("closeMenu");
+
+	for (let i = 0; i < closeMenu.length; i++) {
+	  closeMenu[i].addEventListener("click", chiudiMenu);
+	}
+
+	function chiudiMenu() {
 		document.getElementById("menu").style.display = "none";
-		document.getElementById("barra-navigazione").style.paddingBottom = "14px";
+		document.getElementById("ics").innerHTML = " &#8801 ";
 	}
 }
 
-// javascript per la gestione dell'accordion
+// accordion
 
-function attivaBlocco(n) {
-	let sez = document.getElementsByClassName("pannello");
-	let symbol = document.getElementsByClassName("simbolo");
-	if (sez[n].style.display === "block") {
-		sez[n].style.display = "none";
-		symbol[n].innerHTML = " &#9947 ";  // triangolo
-	} else {
-		for (let i = 0; i < sez.length; i++) {
-			sez[i].style.display = "none";
-		}
-		sez[n].style.display = "block";
-		symbol[n].innerHTML = " &#9932 ";  // croce
-	}
+const accordion = document.getElementsByClassName("accordion");
+const symbol = document.getElementsByClassName("symbol");
+
+for (let i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+
+    // Toggle between hiding and showing the active panel
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+	  symbol[i].innerHTML = " &#9947 ";  // triangle
+    } else {
+      panel.style.display = "block";
+	  symbol[i].innerHTML = " &#9932 ";  // cross
+    }
+  });
 }
-
